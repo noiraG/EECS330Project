@@ -59,6 +59,8 @@ var items = [];
 var envFilter;
 var animalFilter;
 var workerFilter;
+var isFilterShown;
+var filterView;
 
 function init(){
   for (i=1; i<=9; i++){
@@ -67,6 +69,8 @@ function init(){
   envFilter= document.getElementById("env-filter");
   animalFilter= document.getElementById("animal-filter");
   workerFilter= document.getElementById("worker-filter");
+  isFilterShown = false;
+  filterView= document.getElementsByClassName("exten-filter")[0];
 }
 
 function applyFilters() {
@@ -82,6 +86,11 @@ function applyFilters() {
   items.forEach((i)=>i.hidden=true);
   filteredProducts.forEach(p => items[p].hidden=false);
   console.log(filteredProducts)
+}
+
+function toggleFilter() {
+  filterView.hidden = isFilterShown;
+  isFilterShown = !isFilterShown;
 }
 
 init();
