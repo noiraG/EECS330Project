@@ -7,9 +7,9 @@ var products = [
     },
     {
         id: 1,
-        workerScore: 3.3,
-        envScore: 3.5,
-        animalScore: 3.7
+        workerScore: 5,
+        envScore: 4.5,
+        animalScore: 5
     },
     {
         id: 2,
@@ -75,12 +75,13 @@ function applyFilters() {
   var animalValue = animalFilter.value;
   var filteredProducts = [];
   products.forEach(p=>{
-    if (p.workerScore>workerValue && p.envScore>envValue && p.animalScore>animalValue){
+    if (p.workerScore>=workerValue && p.envScore>=envValue && p.animalScore>=animalValue){
       filteredProducts.push(p.id);
     }
   })
-  items.forEach((i)=>i.hidden=true);
-  filteredProducts.forEach(p => items[p].hidden=false);
+  // items.forEach((i)=>i.hidden=true);
+  // filteredProducts.forEach(p => items[p].hidden=false);
+  console.log(filteredProducts)
 }
 
 init();
