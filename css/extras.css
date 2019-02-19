@@ -29,6 +29,39 @@ body, html {
   }
 }
 
+
+.exten-main-button {
+    right: 45px;
+    top: 25px;
+    font-size: 30px;
+    line-height: 44px;
+    background-color: darkseagreen;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    color: white;
+    border: 2px solid white;
+    border-radius: 9px;
+    font-weight: bolder;
+    position: fixed;
+    z-index: 100;
+}
+
+.exten-filter {
+    position: fixed;
+    right: 50px;
+    top: 80px;
+    text-align: center;
+    padding: 10px;
+    border: 3px solid white;
+    background: darkseagreen;
+    z-index: 99;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0px 7px 19px grey;
+    text-shadow: 0px 2px 6px black;
+}
+
 .list-image {
   width: 50%;
 }
@@ -41,4 +74,33 @@ body, html {
 
 .shop-item p{
   margin: 0px;
+}
+
+.extern-filter-0 {
+    float: left;
+    position: relative;
+    left: 30px;
+}
+
+.extern-filter-5 {
+    float: right;
+    position: relative;
+    right: 30px;
+}
+
+.extern-filter-slider::-webkit-slider-thumb {
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    -webkit-appearance: none;
+    background-color: darkgreen;
+}
+
+.extern-filter-slider {
+    -webkit-appearance: none;
+    height: 5px;
+}
+
+.extern-filter-option {
+    margin-bottom: 25px;
 }

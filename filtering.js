@@ -13,7 +13,7 @@ var products = [
     },
     {
         id: 2,
-        workerScore: 3.3,
+        workerScore: 5,
         envScore: 3.5,
         animalScore: 3.7
     },
@@ -25,7 +25,7 @@ var products = [
     },
     {
         id: 4,
-        workerScore: 3.3,
+        workerScore: 5,
         envScore: 3.5,
         animalScore: 3.7
     },
@@ -61,7 +61,7 @@ var animalFilter;
 var workerFilter;
 
 function init(){
-  for (i=0; i<9; i++){
+  for (i=1; i<=9; i++){
     items.push(document.getElementById("item-"+i));
   }
   envFilter= document.getElementById("env-filter");
@@ -79,8 +79,8 @@ function applyFilters() {
       filteredProducts.push(p.id);
     }
   })
-  // items.forEach((i)=>i.hidden=true);
-  // filteredProducts.forEach(p => items[p].hidden=false);
+  items.forEach((i)=>i.hidden=true);
+  filteredProducts.forEach(p => items[p].hidden=false);
   console.log(filteredProducts)
 }
 
