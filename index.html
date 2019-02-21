@@ -10,37 +10,6 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <body>
 
-<button class="exten-main-button" onclick=toggleFilter()>
-   E
-</button>
-<div class="exten-filter" hidden="true">
-   <div class="extern-filter-option">
-      <div>Environmental Substainability</div>
-      <input class="extern-filter-slider" type="range" id="env-filter" value=0 max=5>
-      <div>
-         <div class="extern-filter-0">0</div><div class="extern-filter-5">5</div>
-      </div>
-   </div>
-
-   <div class="extern-filter-option">
-      <div>Animal Treatment</div>
-      <input class="extern-filter-slider" type="range" id="animal-filter" value=0 max=5>
-      <div>
-         <div class="extern-filter-0">0</div><div class="extern-filter-5">5</div>
-      </div>
-   </div>
-
-   <div class="extern-filter-option">
-      <div>Worker Condition</div>
-      <input class="extern-filter-slider" type="range" id="worker-filter" value=0 max=5>
-      <div>
-         <div class="extern-filter-0">0</div><div class="extern-filter-5">5</div>
-      </div>
-   </div>
-
-   <button class="w3-button w3-green" onclick=applyFilters() ><span>Apply</span></button>
-</div>
-
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
   <div class="w3-display-middle" style="white-space:nowrap;">
@@ -51,62 +20,81 @@
 <!-- Container (Portfolio Section) -->
 <div class="w3-content w3-container w3-padding-64" id="portfolio">
   <h3 class="w3-center">What we sell</h3>
-  <p class="w3-center"><em>This is what a shopping website would look like without our plug-in</em></p><br>
+  <p class="w3-center"><em>This is what a shopping website would look like <b>WITHOUT</b> our plug-in</br>
+  <a href="indexE.html">Click Here</a> to see the website with the plug-in</em></p><br>
 
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
   <div class="w3-row-padding w3-center">
     <div class="w3-col shop-item" id="item-1">
-      <img src="images/p1.jpg" class="w3-hover-opacity list-image">
-      <p>Product Name</p>
-      <p>$99.99</p>
+      <div class="host-item-info">
+        <img src="images/p1.jpg" class="w3-hover-opacity list-image">
+        <p>Product Name</p>
+        <p>$99.99</p>
+			</div>
     </div>
 
     <div class="w3-col shop-item" id="item-2">
-      <img src="images/p2.jpg" class="w3-hover-opacity list-image">
-      <p>Product Name</p>
-      <p>$99.99</p>
+      <div class="host-item-info">
+        <img src="images/p2.jpg" class="w3-hover-opacity list-image">
+        <p>Product Name</p>
+        <p>$99.99</p>
+			</div>
     </div>
 
     <div class="w3-col shop-item" id="item-3">
-      <img src="images/p3.jpg" class="w3-hover-opacity list-image">
-      <p>Product Name</p>
-      <p>$99.99</p>
+      <div class="host-item-info">
+        <img src="images/p3.jpg" class="w3-hover-opacity list-image">
+        <p>Product Name</p>
+        <p>$99.99</p>
+			</div>
     </div>
 
     <div class="w3-col shop-item" id="item-4">
-      <img src="images/p4.jpg" class="w3-hover-opacity list-image">
-      <p>Product Name</p>
-      <p>$99.99</p>
+      <div class="host-item-info">
+        <img src="images/p4.jpg" class="w3-hover-opacity list-image">
+        <p>Product Name</p>
+        <p>$99.99</p>
+			</div>
     </div>
 
     <div class="w3-col shop-item" id="item-5">
-      <img src="images/p5.jpg" class="w3-hover-opacity list-image">
-      <p>Product Name</p>
-      <p>$99.99</p>
+      <div class="host-item-info">
+        <img src="images/p5.jpg" class="w3-hover-opacity list-image">
+        <p>Product Name</p>
+        <p>$99.99</p>
+			</div>
     </div>
 
     <div class="w3-col shop-item" id="item-6">
-      <img src="images/p6.jpg" class="w3-hover-opacity list-image">
-      <p>Product Name</p>
-      <p>$99.99</p>
+      <div class="host-item-info">
+        <img src="images/p6.jpg" class="w3-hover-opacity list-image">
+        <p>Product Name</p>
+        <p>$99.99</p>
+			</div>
     </div>
 
     <div class="w3-col shop-item" id="item-7">
-      <img src="images/p7.jpg" class="w3-hover-opacity list-image">
-      <p>Product Name</p>
-      <p>$99.99</p>
+      <div class="host-item-info">
+        <img src="images/p7.jpg" class="w3-hover-opacity list-image">
+        <p>Product Name</p>
+        <p>$99.99</p>
+			</div>
     </div>
 
     <div class="w3-col shop-item" id="item-8">
-      <img src="images/p8.jpg" class="w3-hover-opacity list-image">
-      <p>Product Name</p>
-      <p>$99.99</p>
+      <div class="host-item-info">
+        <img src="images/p8.jpg" class="w3-hover-opacity list-image">
+        <p>Product Name</p>
+        <p>$99.99</p>
+			</div>
     </div>
 
     <div class="w3-col shop-item" id="item-9">
-      <img src="images/p9.jpg" class="w3-hover-opacity list-image">
-      <p>Product Name</p>
-      <p>$99.99</p>
+      <div class="host-item-info">
+        <img src="images/p9.jpg" class="w3-hover-opacity list-image">
+        <p>Product Name</p>
+        <p>$99.99</p>
+			</div>
     </div>
   </div>
 </div>

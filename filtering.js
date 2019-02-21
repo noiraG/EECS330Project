@@ -15,23 +15,23 @@ var products = [
         id: 2,
         workerScore: 5,
         envScore: 3.5,
-        animalScore: 3.7
+        animalScore: 0.7
     },
     {
         id: 3,
         workerScore: 3.3,
         envScore: 3.5,
-        animalScore: 3.7
+        animalScore: 1.7
     },
     {
         id: 4,
         workerScore: 5,
-        envScore: 3.5,
+        envScore: 2.5,
         animalScore: 3.7
     },
     {
         id: 5,
-        workerScore: 3.3,
+        workerScore: 4.3,
         envScore: 3.5,
         animalScore: 3.7
     },
@@ -39,18 +39,18 @@ var products = [
         id: 6,
         workerScore: 3.3,
         envScore: 3.5,
-        animalScore: 3.7
+        animalScore: 2.7
     },
     {
         id: 7,
-        workerScore: 3.3,
+        workerScore: 0.3,
         envScore: 3.5,
         animalScore: 3.7
     },
     {
         id: 8,
         workerScore: 3.3,
-        envScore: 3.5,
+        envScore: 4.5,
         animalScore: 3.7
     }
 ]
