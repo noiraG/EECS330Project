@@ -98,8 +98,21 @@ function clearFilters(){
   workerFilter.value=0
   animalFilter.value=0
   items.forEach((i)=>i.hidden=false);
+  document.getElementById("EnValue").innerHTML="Environmental Substainability"
+  document.getElementById("AnValue").innerHTML="Animal Treatment"
+  document.getElementById("WorkerValue").innerHTML="Worker Condition"
+
+}
+function showvalue1(){
+  document.getElementById("EnValue").innerHTML="Environmental Substainability--"+envFilter.value
+}
+function showvalue2(){
+  document.getElementById("AnValue").innerHTML="Animal Treatment--"+animalFilter.value
 }
 
+function showvalue3(){
+  document.getElementById("WorkerValue").innerHTML="Worker Condition--"+workerFilter.value
+}
 function toggleFilter() {
   filterView.hidden = isFilterShown;
   isFilterShown = !isFilterShown;
