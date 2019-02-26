@@ -61,16 +61,22 @@ var animalFilter;
 var workerFilter;
 var isFilterShown;
 var filterView;
+var overallScoreBtns = [];
+var scoreContainers = [];
 
 function init(){
-  for (i=1; i<=9; i++){
-    items.push(document.getElementById("item-"+i));
-  }
   envFilter= document.getElementById("env-filter");
   animalFilter= document.getElementById("animal-filter");
   workerFilter= document.getElementById("worker-filter");
   isFilterShown = false;
   filterView= document.getElementsByClassName("exten-filter")[0];
+  for (i=1; i<=9; i++){
+    items.push(document.getElementById("item-"+i));
+    overallScoreBtns.push(document.getElementById("overall-"+i));
+    scoreContainers.push(document.getElementById("score-"+i));
+    scoreContainers[i-1].hidden = true;
+  }
+
 }
 
 function applyFilters() {
@@ -97,6 +103,18 @@ function clearFilters(){
 function toggleFilter() {
   filterView.hidden = isFilterShown;
   isFilterShown = !isFilterShown;
+}
+
+function expandScore(i) {
+    overallScoreBtns[i-1].classList.add('expandedView')
+    scoreContainers[i-1].classList.add('expandedView')
+    scoreContainers[i-1].hidden = false
+}
+
+function collapseScore(i){
+  overallScoreBtns[i-1].classList.remove('expandedView')
+  scoreContainers[i-1].classList.remove('expandedView')
+  scoreContainers[i-1].hidden = true
 }
 
 init();
