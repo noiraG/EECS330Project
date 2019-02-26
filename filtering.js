@@ -88,6 +88,9 @@ function applyFilters() {
   console.log(filteredProducts)
 }
 function clearFilters(){
+  envFilter.value=0
+  workerFilter.value=0
+  animalFilter.value=0
   items.forEach((i)=>i.hidden=false);
 }
 
