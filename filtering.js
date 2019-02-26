@@ -98,20 +98,35 @@ function clearFilters(){
   workerFilter.value=0
   animalFilter.value=0
   items.forEach((i)=>i.hidden=false);
-  document.getElementById("EnValue").innerHTML="Environmental Substainability"
-  document.getElementById("AnValue").innerHTML="Animal Treatment"
-  document.getElementById("WorkerValue").innerHTML="Worker Condition"
+  // document.getElementById("EnValue").innerHTML="Environmental Substainability"
+  // document.getElementById("AnValue").innerHTML="Animal Treatment"
+  // document.getElementById("WorkerValue").innerHTML="Worker Condition"
+  document.getElementById("Enstars").innerHTML=""
+  document.getElementById("Anstars").innerHTML=""
+  document.getElementById("Workerstars").innerHTML=""
 
 }
 function showvalue1(){
-  document.getElementById("EnValue").innerHTML="Environmental Substainability--"+envFilter.value
+  // document.getElementById("EnValue").innerHTML="Environmental Substainability--"+envFilter.value
+  document.getElementById("Enstars").innerHTML=""
+  for (var i=0;i<envFilter.value;i++){
+    document.getElementById("Enstars").innerHTML+='<i class="fa fa-star" style="color:#fb0"></i>'
+  }
 }
 function showvalue2(){
-  document.getElementById("AnValue").innerHTML="Animal Treatment--"+animalFilter.value
+  // document.getElementById("AnValue").innerHTML="Animal Treatment--"+animalFilter.value
+  document.getElementById("Anstars").innerHTML=""
+  for (var i=0;i<animalFilter.value;i++){
+    document.getElementById("Anstars").innerHTML+='<i class="fa fa-star" style="color:#fb0"></i>'
+  }
 }
 
 function showvalue3(){
-  document.getElementById("WorkerValue").innerHTML="Worker Condition--"+workerFilter.value
+  // document.getElementById("WorkerValue").innerHTML="Worker Condition--"+workerFilter.value
+  document.getElementById("Workerstars").innerHTML=""
+  for (var i=0;i<workerFilter.value;i++){
+    document.getElementById("Workerstars").innerHTML+='<i class="fa fa-star" style="color:#fb0"></i>'
+  }
 }
 function toggleFilter() {
   filterView.hidden = isFilterShown;
