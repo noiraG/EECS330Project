@@ -87,6 +87,9 @@ function applyFilters() {
   filteredProducts.forEach(p => items[p].hidden=false);
   console.log(filteredProducts)
 }
+function clearFilters(){
+  items.forEach((i)=>i.hidden=false);
+}
 
 function toggleFilter() {
   filterView.hidden = isFilterShown;
