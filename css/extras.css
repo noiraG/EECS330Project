@@ -90,15 +90,17 @@ p.exten-filter-header {
 }
 
 .extern-filter-0 {
+    margin-top: -25px;
     float: left;
     position: relative;
-    left: 30px;
+    left: 10px;
 }
 
 .extern-filter-5 {
+    margin-top: -25px;
     float: right;
     position: relative;
-    right: 30px;
+    right: 10px;
 }
 
 .extern-filter-slider::-webkit-slider-thumb {
@@ -115,7 +117,7 @@ p.exten-filter-header {
 }
 
 .extern-filter-option {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 .exten-filter-apply {
@@ -142,7 +144,7 @@ p.exten-filter-header {
     color: white;
     padding: 0px;
     height: 170px;
-    z-index: -1;
+    z-index: 100;
 }
 
 .exten-item-info p {
@@ -159,4 +161,20 @@ p.exten-filter-header {
   top: 5px;
   right: 10px;
   cursor: pointer;
+}
+
+#Anstars {
+  height: 20px;
+  margin-top: -7px;
+  margin-bottom: -7px;
+}
+#Workerstars {
+  height: 20px;
+  margin-top: -7px;
+  margin-bottom: -7px;
+}
+#Enstars {
+  height: 20px;
+  margin-top: -7px;
+  margin-bottom: -7px;
 }
