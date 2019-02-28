@@ -5,30 +5,17 @@ body, html {
   line-height: 1.8;
 }
 
+.w3-content {
+  max-width: 1200px;
+}
+
 /* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
+.bgimg-1 {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-/* First image (Logo. Full height) */
-.bgimg-1 {
-  background-image: url('../images/parallax1.jpg');
-  min-height: 100%;
-}
-
-/* Second image (Portfolio) */
-.bgimg-2 {
-  background-image: url("../images/parallax2.jpg");
-  min-height: 400px;
-}
-
-/* Third image (Contact) */
-.bgimg-3 {
-  background-image: url("../images/parallax3.jpg");
-  min-height: 400px;
+  background-image: url('../images/background.jpg');
 }
 
 .w3-wide {letter-spacing: 10px;}
@@ -38,6 +25,156 @@ body, html {
 @media only screen and (max-device-width: 1600px) {
   .bgimg-1, .bgimg-2, .bgimg-3 {
     background-attachment: scroll;
-    min-height: 400px;
+    min-height: 180px;
   }
+}
+
+
+.exten-main-button {
+    right: 45px;
+    top: 25px;
+    font-size: 30px;
+    line-height: 44px;
+    background-color: darkseagreen;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    color: white;
+    border: 2px solid white;
+    border-radius: 9px;
+    font-weight: bolder;
+    position: fixed;
+    z-index: 100;
+}
+.exten-main-button:hover{
+  opacity: 0.6;
+}
+
+.exten-filter {
+    position: fixed;
+    right: 50px;
+    top: 80px;
+    text-align: center;
+    padding: 10px;
+    border: 3px solid white;
+    background: darkseagreen;
+    z-index: 99;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0px 7px 19px grey;
+    text-shadow: 0px 2px 6px black;
+}
+
+p.exten-filter-header {
+    margin: 0px;
+    font-size: 20px;
+    text-shadow: 0px 0px 13px black;
+}
+
+.list-image {
+  width: 50%;
+}
+
+.shop-item {
+  width: 30%;
+  margin: 1%;
+}
+
+.host-item-info {
+  border: 4px solid darkgray;
+  background-color: white;
+}
+
+.shop-item p{
+  margin: 0px;
+}
+
+.extern-filter-0 {
+    margin-top: -25px;
+    float: left;
+    position: relative;
+    left: 10px;
+}
+
+.extern-filter-5 {
+    margin-top: -25px;
+    float: right;
+    position: relative;
+    right: 10px;
+}
+
+.extern-filter-slider::-webkit-slider-thumb {
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    -webkit-appearance: none;
+    background-color: darkgreen;
+}
+
+.extern-filter-slider {
+    -webkit-appearance: none;
+    height: 5px;
+}
+
+.extern-filter-option {
+    margin-bottom: 20px;
+}
+
+.exten-filter-apply {
+    border-radius: 10px;
+}
+
+.exten-item-info {
+    background-color: darkseagreen;
+    width: 50%;
+    margin: auto;
+    border-radius: 0% 0% 20px 20px;
+    color: white;
+    padding: 0px;
+    border: 0;
+}
+
+.exten-item-container{
+    background-color: darkseagreen;
+    width: 80%;
+    margin: auto;
+    margin-top: -170px;
+    border-radius: 0% 0% 5px 5px;
+    border: 0;
+    color: white;
+    padding: 0px;
+    height: 170px;
+    z-index: 100;
+}
+
+.exten-item-info p {
+    margin-bottom: -6px;
+    margin-top: -3px;
+}
+
+.expandedView {
+   transform: translate(0, 170px);
+   box-shadow: 0px 7px 19px grey;
+}
+.close-btn{
+  position:absolute;
+  top: 5px;
+  right: 10px;
+  cursor: pointer;
+}
+
+#Anstars {
+  height: 20px;
+  margin-top: -7px;
+  margin-bottom: -7px;
+}
+#Workerstars {
+  height: 20px;
+  margin-top: -7px;
+  margin-bottom: -7px;
+}
+#Enstars {
+  height: 20px;
+  margin-top: -7px;
+  margin-bottom: -7px;
 }
