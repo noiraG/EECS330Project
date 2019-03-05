@@ -8,11 +8,20 @@
 <link rel="stylesheet" href="css/extras.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <body>
+
+
 
 <button class="exten-main-button" onclick=toggleFilter()>
    E
 </button>
+
+
 <div class="exten-filter" hidden="true">
    <p class="exten-filter-header">Product Ethicacy Filter</p>
    <div class="extern-filter-option">
@@ -24,7 +33,22 @@
       </div>
    </div>
    <div class="extern-filter-option">
-      <div id="EnValue">Environmental Substainability</div>
+    
+    <div>
+      <div class="EnValue">Environmental Substainability</div>
+      <div class="popover__wrapper">
+        <a href="#">
+          <i class="material-icons">info</i>
+        </a>
+        <div class="popover__content">
+          <p class="popover__message">Environmental substainbility means xxxx</p>
+        </div>
+      </div> 
+    </div> 
+
+
+
+
       <div id='Enstars'></div>
       <input class="extern-filter-slider" type="range" id="env-filter" value=0 max=5 onmouseup ="showvalue1()">
       <div>
@@ -33,7 +57,20 @@
    </div>
 
    <div class="extern-filter-option">
-      <div id="AnValue">Animal Treatment</div>
+      
+    <div>
+      <div class="EnValue">Animal Treatment</div>
+      <div class="popover__wrapper">
+        <a href="#">
+          <i class="material-icons" >info</i>
+        </a>
+        <div class="popover__content">
+          <p class="popover__message">Animal Treatment means xxxx</p>
+        </div>
+      </div> 
+    </div> 
+
+
       <div id='Anstars'></div>
       <input class="extern-filter-slider" type="range" id="animal-filter" value=0 max=5 onmouseup ="showvalue2()" >
       <div>
@@ -42,7 +79,17 @@
    </div>
 
    <div class="extern-filter-option">
-      <div id="WorkerValue">Worker Condition</div>
+      <div>
+      <div class="EnValue">Worker Condition</div>
+      <div class="popover__wrapper">
+        <a href="#">
+          <i class="material-icons">info</i>
+        </a>
+        <div class="popover__content">
+          <p class="popover__message">Worker condition means xxx</p>
+        </div>
+      </div> 
+    </div> 
       <div id='Workerstars'></div>
       <input class="extern-filter-slider" type="range" id="worker-filter" value=0 max=5 onmouseup ="showvalue3()">
       <div>
