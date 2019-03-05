@@ -163,6 +163,21 @@ p.exten-filter-header {
   cursor: pointer;
 }
 
+.sort-container{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 100px;
+  color: black;
+}
+
+.ethical-sort{
+  color: white;
+  background-color: darkseagreen;
+  margin-left: 10px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
 #Anstars {
   height: 20px;
   margin-top: -7px;

@@ -73,6 +73,8 @@ var isFilterShown;
 var filterView;
 var overallScoreBtns = [];
 var scoreContainers = [];
+var sort;
+var itemContainer;
 
 function init(){
   overallFilter = document.getElementById("overall-filter");
@@ -81,6 +83,8 @@ function init(){
   workerFilter= document.getElementById("worker-filter");
   isFilterShown = false;
   filterView= document.getElementsByClassName("exten-filter")[0];
+  sort = document.getElementsByClassName("ethical-sort")[0];
+  itemContainer = document.getElementsByClassName("item-container")[0];
   for (i=1; i<=9; i++){
     items.push(document.getElementById("item-"+i));
     overallScoreBtns.push(document.getElementById("overall-"+i));
@@ -103,7 +107,6 @@ function applyFilters() {
   })
   items.forEach((i)=>i.hidden=true);
   filteredProducts.forEach(p => items[p].hidden=false);
-  console.log(filteredProducts)
 }
 function clearFilters(){
   envFilter.value=0
@@ -164,6 +167,21 @@ function collapseScore(i){
   overallScoreBtns[i-1].classList.remove('expandedView')
   scoreContainers[i-1].classList.remove('expandedView')
   scoreContainers[i-1].hidden = true
+}
+
+function sortItems(){
+  var feature = sort.options[sort.selectedIndex].value
+  var itemBank=[];
+  while (itemContainer.firstChild) {
+    itemBank.push(itemContainer.firstChild)
+    itemContainer.removeChild(itemContainer.firstChild);
+  }
+  products.sort(function(a, b){
+    return (feature==="id") ? a[feature]-b[feature] :  b[feature]-a[feature]
+  })
+  products.forEach(p=>{
+    itemContainer.appendChild(itemBank.find(i=>i.id==="item-"+(p.id+1)))
+  })
 }
 
 init();
