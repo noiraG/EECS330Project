@@ -65,13 +65,22 @@
 <div class="w3-content w3-container w3-padding-64" id="portfolio">
   <h3 class="w3-center">What we sell</h3>
   <p class="w3-center"><em>This is what a shopping website would look like <b>WITH</b> our plug-in in the top right corner</em></p><br>
-
+  <div class="sort-container">
+    <span>Sort By:</span>
+    <select class="ethical-sort" onchange=sortItems()>
+      <option value="id">Select</option>
+      <option value="overallScore">Overall Ethical Score</option>
+      <option value="envScore">Environmental Score</option>
+      <option value="workerScore">Workers Score</option>
+      <option value="animalScore">Animal Score</option>
+    </select>
+  </div>
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-  <div class="w3-row-padding w3-center">
+  <div class="w3-row-padding w3-center item-container" >
     <div class="w3-col shop-item" id="item-1">
       <div class="host-item-info">
         <img src="images/p1.jpg" class="w3-hover-opacity list-image">
-        <p>Product Name</p>
+        <p>Edifier R1280T</p>
         <p>$99.99</p>
 			</div>
       <div>
@@ -110,8 +119,8 @@
     <div class="w3-col shop-item" id="item-2">
       <div class="host-item-info">
         <img src="images/p2.jpg" class="w3-hover-opacity list-image">
-        <p>Product Name</p>
-        <p>$99.99</p>
+        <p>Logitech Multimedia Speakers</p>
+        <p>$22.99</p>
 			</div>
       <div>
       <div class="exten-item-container" id="score-2">
@@ -149,8 +158,8 @@
     <div class="w3-col shop-item" id="item-3">
       <div class="host-item-info">
         <img src="images/p3.jpg" class="w3-hover-opacity list-image">
-        <p>Product Name</p>
-        <p>$99.99</p>
+        <p>JBL Flip 4</p>
+        <p>$74.95</p>
 			</div>
       <div>
       <div class="exten-item-container" id="score-3">
@@ -188,8 +197,8 @@
     <div class="w3-col shop-item" id="item-4">
       <div class="host-item-info">
         <img src="images/p4.jpg" class="w3-hover-opacity list-image">
-        <p>Product Name</p>
-        <p>$99.99</p>
+        <p>Logitech 2313</p>
+        <p>$34.50</p>
 			</div>
       <div>
         <div class="exten-item-container" id="score-4">
@@ -227,7 +236,7 @@
     <div class="w3-col shop-item" id="item-5">
       <div class="host-item-info">
         <img src="images/p5.jpg" class="w3-hover-opacity list-image">
-        <p>Product Name</p>
+        <p>Anker Soundscore Bluetooth Speaker</p>
         <p>$99.99</p>
 			</div>
       <div>
@@ -266,8 +275,8 @@
     <div class="w3-col shop-item" id="item-6">
       <div class="host-item-info">
         <img src="images/p6.jpg" class="w3-hover-opacity list-image">
-        <p>Product Name</p>
-        <p>$99.99</p>
+        <p>Oont Angle 3</p>
+        <p>$21.99</p>
 			</div>
       <div>
         <div class="exten-item-container" id="score-6">
@@ -305,8 +314,8 @@
     <div class="w3-col shop-item" id="item-7">
       <div class="host-item-info">
         <img src="images/p7.jpg" class="w3-hover-opacity list-image">
-        <p>Product Name</p>
-        <p>$99.99</p>
+        <p>Polk Audio T15</p>
+        <p>$59.00</p>
 			</div>
       <div>
         <div class="exten-item-container" id="score-7">
@@ -344,8 +353,8 @@
     <div class="w3-col shop-item" id="item-8">
       <div class="host-item-info">
         <img src="images/p8.jpg" class="w3-hover-opacity list-image">
-        <p>Product Name</p>
-        <p>$99.99</p>
+        <p>Bose Companion 2</p>
+        <p>$99.00</p>
 			</div>
       <div>
         <div class="exten-item-container" id="score-8">
@@ -383,7 +392,7 @@
     <div class="w3-col shop-item" id="item-9">
       <div class="host-item-info">
         <img src="images/p9.jpg" class="w3-hover-opacity list-image">
-        <p>Product Name</p>
+        <p>Logitech Z623</p>
         <p>$99.99</p>
 			</div>
       <div>
