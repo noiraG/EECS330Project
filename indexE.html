@@ -8,50 +8,107 @@
 <link rel="stylesheet" href="css/extras.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <body>
 
-<button class="exten-main-button" onclick=toggleFilter()>
+
+
+  <button class="exten-main-button" onclick=toggleFilter()>
    E
-</button>
-<div class="exten-filter" hidden="true">
+ </button>
+
+
+ <div class="exten-filter" hidden="true">
    <p class="exten-filter-header">Product Ethicacy Filter</p>
    <div class="extern-filter-option">
-      <div id="OverallValue">Overall Ethical Score</div>
-      <div id="Overallstars"></div>
-      <input class="extern-filter-slider" type="range" id="overall-filter" value=0 max=5 onmouseup ="showvalue4()">
-      <div>
-         <div class="extern-filter-0">0</div><div class="extern-filter-5">5</div>
-      </div>
+    <div>
+      <div class="EnValue">Overall Ethical Score</div>
+      <div class="popover__wrapper">
+        <a href="#">
+          <i class="material-icons">info</i>
+        </a>
+        <div class="popover__content">
+          <p class="popover__message">Overall Ethical Score is an evaluation for the seller considering all-rounded aspect according to its business practices.</p>
+        </div>
+      </div> 
+    </div> 
+    <div id="Overallstars"></div>
+    <input class="extern-filter-slider" type="range" id="overall-filter" value=0 max=5 onmouseup ="showvalue4()">
+    <div>
+     <div class="extern-filter-0">0</div><div class="extern-filter-5">5</div>
    </div>
-   <div class="extern-filter-option">
-      <div id="EnValue">Environmental Substainability</div>
-      <div id='Enstars'></div>
-      <input class="extern-filter-slider" type="range" id="env-filter" value=0 max=5 onmouseup ="showvalue1()">
-      <div>
-         <div class="extern-filter-0">0</div><div class="extern-filter-5">5</div>
+ </div>
+ <div class="extern-filter-option">
+  
+  <div>
+    <div class="EnValue">Environmental Substainability</div>
+    <div class="popover__wrapper">
+      <a href="#">
+        <i class="material-icons">info</i>
+      </a>
+      <div class="popover__content">
+        <p class="popover__message"> Environmental Substainability is the rates of renewable resource harvest, pollution creation, and non-renewable resource depletion that can be continued indefinitely. If they cannot be continued indefinitely then they are not sustainable. This is a standard used to evaluate the ethicality of the seller</p>
       </div>
-   </div>
+    </div> 
+  </div> 
 
-   <div class="extern-filter-option">
-      <div id="AnValue">Animal Treatment</div>
-      <div id='Anstars'></div>
-      <input class="extern-filter-slider" type="range" id="animal-filter" value=0 max=5 onmouseup ="showvalue2()" >
-      <div>
-         <div class="extern-filter-0">0</div><div class="extern-filter-5">5</div>
-      </div>
-   </div>
 
-   <div class="extern-filter-option">
-      <div id="WorkerValue">Worker Condition</div>
-      <div id='Workerstars'></div>
-      <input class="extern-filter-slider" type="range" id="worker-filter" value=0 max=5 onmouseup ="showvalue3()">
-      <div>
-         <div class="extern-filter-0">0</div><div class="extern-filter-5">5</div>
-      </div>
-   </div>
 
-   <button class="w3-button w3-green exten-filter-apply" onclick=clearFilters() ><span>Clear</span></button>
-   <button class="w3-button w3-green exten-filter-apply" onclick=applyFilters() ><span>Apply</span></button>
+
+  <div id='Enstars'></div>
+  <input class="extern-filter-slider" type="range" id="env-filter" value=0 max=5 onmouseup ="showvalue1()">
+  <div>
+   <div class="extern-filter-0">0</div><div class="extern-filter-5">5</div>
+ </div>
+</div>
+
+<div class="extern-filter-option">
+  
+  <div>
+    <div class="EnValue">Animal Treatment</div>
+    <div class="popover__wrapper">
+      <a href="#">
+        <i class="material-icons" >info</i>
+      </a>
+      <div class="popover__content">
+        <p class="popover__message">Animal Treatment refers to the state of the animal; the treatment that an animal receives is covered by other terms such as animal care, animal husbandry, and humane treatment. Protecting an animal's welfare means providing for its physical and mental needs. Sellers are evaluated here based on how they treat animals in the process of their production </p>
+      </div>
+    </div> 
+  </div> 
+
+
+  <div id='Anstars'></div>
+  <input class="extern-filter-slider" type="range" id="animal-filter" value=0 max=5 onmouseup ="showvalue2()" >
+  <div>
+   <div class="extern-filter-0">0</div><div class="extern-filter-5">5</div>
+ </div>
+</div>
+
+<div class="extern-filter-option">
+  <div>
+    <div class="EnValue">Worker Condition</div>
+    <div class="popover__wrapper">
+      <a href="#">
+        <i class="material-icons">info</i>
+      </a>
+      <div class="popover__content">
+        <p class="popover__message">Generally speaking, working conditions cover a broad range of topics and issues, from working time (hours of work, rest periods, and work schedules) to remuneration, as well as the physical conditions and mental demands that exist in the workplace.</p>
+      </div>
+    </div> 
+  </div> 
+  <div id='Workerstars'></div>
+  <input class="extern-filter-slider" type="range" id="worker-filter" value=0 max=5 onmouseup ="showvalue3()">
+  <div>
+   <div class="extern-filter-0">0</div><div class="extern-filter-5">5</div>
+ </div>
+</div>
+
+<button class="w3-button w3-green exten-filter-apply" onclick=clearFilters() ><span>Clear</span></button>
+<button class="w3-button w3-green exten-filter-apply" onclick=applyFilters() ><span>Apply</span></button>
 </div>
 
 <!-- First Parallax Image with Logo Text -->
@@ -78,11 +135,13 @@
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
   <div class="w3-row-padding w3-center item-container" >
     <div class="w3-col shop-item" id="item-1">
-      <div class="host-item-info">
-        <img src="images/p1.jpg" class="w3-hover-opacity list-image">
-        <p>Edifier R1280T</p>
-        <p>$99.99</p>
-			</div>
+      <a href="item1.html">
+        <div class="host-item-info">
+          <img src="images/p1.jpg" class="w3-hover-opacity list-image">
+          <p>Edifier R1280T</p>
+          <p>$99.99</p>
+        </div>
+      </a>
       <div>
         <div class="exten-item-container" id="score-1">
           <p class="close-btn" onclick=collapseScore(1)>x</p>
@@ -106,13 +165,13 @@
           <i class="fa fa-star-o"></i>
         </div>
         <div class="exten-item-info w3-btn" id="overall-1"   onclick=expandScore(1)>
-        <p>Ethicacy Rating</p>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star-half-o"></i>
-        <i class="fa fa-star-o"></i>
-      </div>
+          <p>Ethicacy Rating</p>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half-o"></i>
+          <i class="fa fa-star-o"></i>
+        </div>
       </div>
     </div>
 
@@ -121,38 +180,38 @@
         <img src="images/p2.jpg" class="w3-hover-opacity list-image">
         <p>Logitech Multimedia Speakers</p>
         <p>$22.99</p>
-			</div>
+      </div>
       <div>
-      <div class="exten-item-container" id="score-2">
-        <p class="close-btn" onclick=collapseScore(2)>x</p>
-        <p>Substainability</p>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star-half-o"></i>
-        <p>Worker's Rights</p>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-        <p>Animal Treatment</p>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
+        <div class="exten-item-container" id="score-2">
+          <p class="close-btn" onclick=collapseScore(2)>x</p>
+          <p>Substainability</p>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half-o"></i>
+          <p>Worker's Rights</p>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <p>Animal Treatment</p>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </div>
+        <div class="exten-item-info w3-btn"  id="overall-2" onclick=expandScore(2)>
+          <p>Ethicacy Rating</p>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </div>
       </div>
-      <div class="exten-item-info w3-btn"  id="overall-2" onclick=expandScore(2)>
-        <p>Ethicacy Rating</p>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-      </div>
-    </div>
     </div>
 
     <div class="w3-col shop-item" id="item-3">
@@ -160,38 +219,38 @@
         <img src="images/p3.jpg" class="w3-hover-opacity list-image">
         <p>JBL Flip 4</p>
         <p>$74.95</p>
-			</div>
+      </div>
       <div>
-      <div class="exten-item-container" id="score-3">
-        <p class="close-btn" onclick=collapseScore(3)>x</p>
-        <p>Substainability</p>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star-half-o"></i>
-        <i class="fa fa-star-o"></i>
-        <p>Worker's Rights</p>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-        <p>Animal Treatment</p>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star-o"></i>
-        <i class="fa fa-star-o"></i>
-        <i class="fa fa-star-o"></i>
-        <i class="fa fa-star-o"></i>
+        <div class="exten-item-container" id="score-3">
+          <p class="close-btn" onclick=collapseScore(3)>x</p>
+          <p>Substainability</p>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half-o"></i>
+          <i class="fa fa-star-o"></i>
+          <p>Worker's Rights</p>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <p>Animal Treatment</p>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-o"></i>
+          <i class="fa fa-star-o"></i>
+          <i class="fa fa-star-o"></i>
+          <i class="fa fa-star-o"></i>
+        </div>
+        <div class="exten-item-info w3-btn"  id="overall-3" onclick=expandScore(3)>
+          <p>Ethicacy Rating</p>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-o"></i>
+          <i class="fa fa-star-o"></i>
+        </div>
       </div>
-      <div class="exten-item-info w3-btn"  id="overall-3" onclick=expandScore(3)>
-        <p>Ethicacy Rating</p>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star-o"></i>
-        <i class="fa fa-star-o"></i>
-      </div>
-    </div>
     </div>
 
     <div class="w3-col shop-item" id="item-4">
@@ -199,7 +258,7 @@
         <img src="images/p4.jpg" class="w3-hover-opacity list-image">
         <p>Logitech 2313</p>
         <p>$34.50</p>
-			</div>
+      </div>
       <div>
         <div class="exten-item-container" id="score-4">
           <p class="close-btn" onclick=collapseScore(4)>x</p>
@@ -230,7 +289,7 @@
           <i class="fa fa-star-o"></i>
           <i class="fa fa-star-o"></i>
         </div>
-    </div>
+      </div>
     </div>
 
     <div class="w3-col shop-item" id="item-5">
@@ -238,7 +297,7 @@
         <img src="images/p5.jpg" class="w3-hover-opacity list-image">
         <p>Anker Soundscore Bluetooth Speaker</p>
         <p>$99.99</p>
-			</div>
+      </div>
       <div>
         <div class="exten-item-container" id="score-5">
           <p class="close-btn" onclick=collapseScore(5)>x</p>
@@ -269,7 +328,7 @@
           <i class="fa fa-star"></i>
           <i class="fa fa-star-o"></i>
         </div>
-    </div>
+      </div>
     </div>
 
     <div class="w3-col shop-item" id="item-6">
@@ -277,7 +336,7 @@
         <img src="images/p6.jpg" class="w3-hover-opacity list-image">
         <p>Oont Angle 3</p>
         <p>$21.99</p>
-			</div>
+      </div>
       <div>
         <div class="exten-item-container" id="score-6">
           <p class="close-btn" onclick=collapseScore(6)>x</p>
@@ -308,7 +367,7 @@
           <i class="fa fa-star"></i>
           <i class="fa fa-star-o"></i>
         </div>
-    </div>
+      </div>
     </div>
 
     <div class="w3-col shop-item" id="item-7">
@@ -316,7 +375,7 @@
         <img src="images/p7.jpg" class="w3-hover-opacity list-image">
         <p>Polk Audio T15</p>
         <p>$59.00</p>
-			</div>
+      </div>
       <div>
         <div class="exten-item-container" id="score-7">
           <p class="close-btn" onclick=collapseScore(7)>x</p>
@@ -347,7 +406,7 @@
           <i class="fa fa-star-o"></i>
           <i class="fa fa-star-o"></i>
         </div>
-    </div>
+      </div>
     </div>
 
     <div class="w3-col shop-item" id="item-8">
@@ -355,7 +414,7 @@
         <img src="images/p8.jpg" class="w3-hover-opacity list-image">
         <p>Bose Companion 2</p>
         <p>$99.00</p>
-			</div>
+      </div>
       <div>
         <div class="exten-item-container" id="score-8">
           <p class="close-btn" onclick=collapseScore(8)>x</p>
@@ -386,7 +445,7 @@
           <i class="fa fa-star-o"></i>
           <i class="fa fa-star-o"></i>
         </div>
-    </div>
+      </div>
     </div>
 
     <div class="w3-col shop-item" id="item-9">
@@ -394,7 +453,7 @@
         <img src="images/p9.jpg" class="w3-hover-opacity list-image">
         <p>Logitech Z623</p>
         <p>$99.99</p>
-			</div>
+      </div>
       <div>
         <div class="exten-item-container" id="score-9">
           <p class="close-btn" onclick=collapseScore(9)>x</p>
@@ -425,7 +484,7 @@
           <i class="fa fa-star"></i>
           <i class="fa fa-star-o"></i>
         </div>
-    </div>
+      </div>
     </div>
   </div>
 </div>
