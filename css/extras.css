@@ -237,25 +237,13 @@ a {
   visibility: hidden;
   position: absolute;
   left: -170px;
-  transform: translate(0, 10px);
-  background-color: #bfbfbf;
-
-
-  padding: 1.5rem;
+  margin-top: 20px;
+  background-color: #bfbfbfe6;
+  border-radius: 10px;
+  padding: 20px;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
   width: 250px;
-}
-.popover__content:before {
-  position: absolute;
-  z-index: -1;
-  content: "";
-  right: calc(50% - 10px);
-  top: -8px;
-  border-style: solid;
-  border-width: 0 10px 10px 10px;
-  border-color: transparent transparent #bfbfbf transparent;
-  transition-duration: 0.3s;
-  transition-property: transform;
+
 }
 .popover__wrapper:hover .popover__content {
   z-index: 10;
@@ -266,5 +254,6 @@ a {
 }
 .popover__message {
   text-align:left;
+  color: black;
+  text-shadow: none;
 }
-
