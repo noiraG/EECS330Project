@@ -160,13 +160,18 @@ function toggleFilter() {
 function expandScore(i) {
     overallScoreBtns[i-1].classList.add('expandedView')
     scoreContainers[i-1].classList.add('expandedView')
-    scoreContainers[i-1].hidden = false
+    scoreContainers[i-1].hidden = false  
+    //overallScoreBtns[i-1].style.visibility='hidden'
+    overallScoreBtns[i-1].style.display='none'
 }
 
 function collapseScore(i){
   overallScoreBtns[i-1].classList.remove('expandedView')
   scoreContainers[i-1].classList.remove('expandedView')
   scoreContainers[i-1].hidden = true
+  //overallScoreBtns[i-1].style.visibility='visible'
+  overallScoreBtns[i-1].style.display='block'
+ 
 }
 
 function sortItems(){
@@ -182,6 +187,21 @@ function sortItems(){
   products.forEach(p=>{
     itemContainer.appendChild(itemBank.find(i=>i.id==="item-"+(p.id+1)))
   })
+
+  showThingid=''
+  if(feature=='id'||feature=='overallScore'){
+    showThingid='ov'
+  }
+  else{
+    showThingid=feature.slice(0,2)
+  }
+  for(i=1;i<10;i++){
+    var temp=document.getElementById(showThingid+i.toString()).innerHTML
+    overallScoreBtns[i-1].innerHTML=temp
+  }
+
+
 }
+
 
 init();
