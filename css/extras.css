@@ -142,14 +142,17 @@ p.exten-filter-header {
 
 .exten-item-container{
     background-color: darkseagreen;
-    width: 80%;
+    position: relative;
+    width: 200px;
     margin: auto;
-    margin-top: -170px;
+    margin-top: -230px;
     border-radius: 0% 0% 5px 5px;
     border: 0;
     color: white;
     padding: 0px;
     height: 210px;
+    height:230px;
+    z-index: 100;
 
 }
 
@@ -160,7 +163,7 @@ p.exten-filter-header {
 }
 
 .expandedView {
-   transform: translate(0, 170px);
+   transform: translate(0, 230px);
    box-shadow: 0px 7px 19px grey;
 
 }
@@ -184,6 +187,15 @@ p.exten-filter-header {
   margin-left: 10px;
   padding: 5px;
   border-radius: 5px;
+}
+
+.ethical-filter{
+  color: white;
+  background-color: darkseagreen;
+  margin-left: 50px;
+  padding: 5px 20px 5px 20px;
+  border-radius: 5px;
+  border: none;
 }
 
 #Anstars {
@@ -220,8 +232,14 @@ a {
 }
 
 .EnValue{
+
 display: inline-block;
 z-index: -10;
+
+  position: relative;
+  margin-right: 5px;
+  display: inline-block;
+
 }
 
 
