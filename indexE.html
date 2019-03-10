@@ -127,10 +127,13 @@ rel="stylesheet">
     <select class="ethical-sort" onchange=sortItems()>
       <option value="id">Select</option>
       <option value="overallScore">Overall Ethical Score</option>
-      <option value="envScore">Environmental Score</option>
-      <option value="workerScore">Workers Score</option>
-      <option value="animalScore">Animal Score</option>
+      <option value="envScore">Substainability Score</option>
+      <option value="workerScore">Worker's Rights Score</option>
+      <option value="animalScore">Animal Treatment Score</option>
     </select>
+    <button class="ethical-filter" onclick=toggleFilter()>
+      Filter Options
+   </button>
   </div>
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
   <div class="w3-row-padding w3-center item-container" >
@@ -407,8 +410,8 @@ rel="stylesheet">
         <div class="popover__content" >
           <p class="popover__message">Animal Treatment refers to the state of the animal; the treatment that an animal receives is covered by other terms such as animal care, animal husbandry, and humane treatment. Protecting an animal's welfare means providing for its physical and mental needs. Sellers are evaluated here based on how they treat animals in the process of their production </p>
         </div>
-      </div> 
-      <p></p>    
+      </div>
+      <p></p>
 
       <div class="EnValue" id='ov3'>
 
@@ -445,7 +448,7 @@ rel="stylesheet">
       <div class="popover__content" >
        <p class="popover__message"> Overall Ethical Score is an evaluation for the seller considering all-rounded aspect according to its business practices.</p>
      </div>
-   </div>   
+   </div>
  </div>
 
 
@@ -478,7 +481,7 @@ rel="stylesheet">
         <div class="popover__content" >
           <p class="popover__message"> Environmental Substainability is the rates of renewable resource harvest, pollution creation, and non-renewable resource depletion that can be continued indefinitely. If they cannot be continued indefinitely then they are not sustainable. This is a standard used to evaluate the ethicality of the seller</p>
         </div>
-      </div> 
+      </div>
       <p></p>
       <div class="EnValue" id='wo4'>
         <p>Worker's Rights</p>
@@ -496,7 +499,7 @@ rel="stylesheet">
          <p class="popover__message">Generally speaking, working conditions cover a broad range of topics and issues, from working time (hours of work, rest periods, and work schedules) to remuneration, as well as the physical conditions and mental demands that exist in the workplace.</p>
        </div>
 
-     </div> 
+     </div>
      <p></p>
      <div class="EnValue" id='an4'>
       <p>Animal Treatment</p>
@@ -515,7 +518,7 @@ rel="stylesheet">
        <p class="popover__message">Animal Treatment refers to the state of the animal; the treatment that an animal receives is covered by other terms such as animal care, animal husbandry, and humane treatment. Protecting an animal's welfare means providing for its physical and mental needs. Sellers are evaluated here based on how they treat animals in the process of their production </p>
      </div>
 
-   </div> 
+   </div>
    <p></p>
    <div class="EnValue" id='ov4'>
     <p>Ethicacy Rating</p>
@@ -555,7 +558,7 @@ rel="stylesheet">
     <div class="popover__content" >
      <p class="popover__message"> Overall Ethical Score is an evaluation for the seller considering all-rounded aspect according to its business practices.</p>
    </div>
- </div> 
+ </div>
 </div>
 
 
@@ -588,7 +591,7 @@ rel="stylesheet">
          <p class="popover__message"> Environmental Substainability is the rates of renewable resource harvest, pollution creation, and non-renewable resource depletion that can be continued indefinitely. If they cannot be continued indefinitely then they are not sustainable. This is a standard used to evaluate the ethicality of the seller</p>
        </div>
 
-     </div> 
+     </div>
      <p></p>
 
      <div class="EnValue" id='wo5'>
@@ -607,7 +610,7 @@ rel="stylesheet">
        <p class="popover__message">Generally speaking, working conditions cover a broad range of topics and issues, from working time (hours of work, rest periods, and work schedules) to remuneration, as well as the physical conditions and mental demands that exist in the workplace.</p>
 
      </div>
-   </div> 
+   </div>
    <p></p>
    <div class="EnValue" id='an5'>
     <p>Animal Treatment</p>
@@ -625,7 +628,7 @@ rel="stylesheet">
      <p class="popover__message">Animal Treatment refers to the state of the animal; the treatment that an animal receives is covered by other terms such as animal care, animal husbandry, and humane treatment. Protecting an animal's welfare means providing for its physical and mental needs. Sellers are evaluated here based on how they treat animals in the process of their production </p>
 
    </div>
- </div> 
+ </div>
 
  <p></p>
 
@@ -1092,7 +1095,7 @@ rel="stylesheet">
         <i class="material-icons">info</i>
       </a>
       <div class="popover__content" >
-       
+
         <p class="popover__message"> Overall Ethical Score is an evaluation for the seller considering all-rounded aspect according to its business practices.</p>
 
       </div>
