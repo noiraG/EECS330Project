@@ -161,16 +161,16 @@ function expandScore(i) {
     overallScoreBtns[i-1].classList.add('expandedView')
     scoreContainers[i-1].classList.add('expandedView')
     scoreContainers[i-1].hidden = false  
-    //overallScoreBtns[i-1].style.visibility='hidden'
-    overallScoreBtns[i-1].style.display='none'
+    overallScoreBtns[i-1].style.visibility='hidden'
+    //overallScoreBtns[i-1].style.display='none'
 }
 
 function collapseScore(i){
   overallScoreBtns[i-1].classList.remove('expandedView')
   scoreContainers[i-1].classList.remove('expandedView')
   scoreContainers[i-1].hidden = true
-  //overallScoreBtns[i-1].style.visibility='visible'
-  overallScoreBtns[i-1].style.display='block'
+  overallScoreBtns[i-1].style.visibility='visible'
+ // overallScoreBtns[i-1].style.display='block'
  
 }
 
