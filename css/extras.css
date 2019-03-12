@@ -232,14 +232,9 @@ a {
 }
 
 .EnValue{
-
-display: inline-block;
-z-index: -10;
-
-  position: relative;
+  z-index: -10;
   margin-right: 5px;
   display: inline-block;
-
 }
 
 
@@ -253,8 +248,9 @@ z-index: -10;
 }
 
 .popover__wrapper{
-  position:absolute;
-  display: inline-block;
+    display: inline-block;
+    position: absolute;
+    margin-top: 10px;
 }
 .popover__content {
   opacity: 1;
