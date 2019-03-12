@@ -24,3 +24,23 @@
     opacity: 0.6;
     cursor: pointer;
 }
+
+#exten-filter-header {
+  border-bottom: 5px solid;
+    width: 100%;
+    margin-bottom: 18px;
+    padding-bottom: 6px;
+}
+
+.exten-filter-scores {
+  height: 412px;
+}
+
+.exten-filter .fa-star, .exten-filter .fa-star-half {
+  color: #fb0;
+}
+
+.w3-ul li {
+  list-style: none;
+  color: white;
+}
