@@ -44,3 +44,8 @@
   list-style: none;
   color: white;
 }
+
+ul.w3-ul.w3-half {
+    width: 45%;
+    margin: 2% 2.5%;
+}
