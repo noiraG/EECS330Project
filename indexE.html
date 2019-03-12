@@ -15,8 +15,6 @@ rel="stylesheet">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <body>
 
-
-
   <button class="exten-main-button" onclick=toggleFilter()>
    E
  </button>
@@ -137,6 +135,11 @@ rel="stylesheet">
   </div>
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
   <div class="w3-row-padding w3-center item-container" >
+
+    <div id="no-items-found" class="no_result_found_text" hidden="true">
+      <p>No Result Found. Try Other Filter Settings.</p>
+    </div>
+
     <div class="w3-col shop-item" id="item-1">
       <a href="item1.html">
         <div class="host-item-info">
