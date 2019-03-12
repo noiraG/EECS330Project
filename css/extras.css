@@ -257,6 +257,9 @@ a {
     position: absolute;
     margin-top: 10px;
 }
+.exten-filter .popover__wrapper .material-icons {
+  line-height: 0px;
+}
 .popover__content {
   opacity: 1;
   visibility: hidden;
