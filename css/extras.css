@@ -258,7 +258,9 @@ a {
     margin-top: 10px;
 }
 .exten-filter .popover__wrapper .material-icons {
-  line-height: 0px;
+    line-height: 0px;
+    top: -3px;
+    position: relative;
 }
 .popover__content {
   opacity: 1;
