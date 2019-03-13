@@ -206,8 +206,10 @@ function sortItems() {
         showThingid = feature.slice(0, 2)
     }
     for (i = 1; i < 10; i++) {
-        var temp = document.getElementById(showThingid + i.toString()).innerHTML
-        overallScoreBtns[i - 1].innerHTML = temp
+        var temp = document.getElementById(showThingid + i.toString());
+        var icon = document.getElementsByClassName("popover__wrapper")[0];
+        console.log (temp.outerHTML);
+        overallScoreBtns[i - 1].innerHTML = temp.outerHTML + icon.outerHTML;
     }
 
 
