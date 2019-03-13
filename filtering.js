@@ -198,18 +198,22 @@ function sortItems() {
     products.forEach(p => {
         itemContainer.appendChild(itemBank.find(i => i.id === "item-" + (p.id + 1)))
     })
-
+    iconid=''
     showThingid = ''
     if (feature == 'id' || feature == 'overallScore') {
         showThingid = 'ov'
-    } else {
+        iconid='ovov'
+        
+    }
+     else {
         showThingid = feature.slice(0, 2)
+        iconid=showThingid+showThingid
     }
     for (i = 1; i < 10; i++) {
         var temp = document.getElementById(showThingid + i.toString());
-        var icon = document.getElementsByClassName("popover__wrapper")[0];
-        console.log (temp.outerHTML);
-        overallScoreBtns[i - 1].innerHTML = temp.outerHTML + icon.outerHTML;
+        var icon = document.getElementById(iconid);
+  
+        overallScoreBtns[i - 1].innerHTML =temp.outerHTML+icon.outerHTML
     }
 
 
