@@ -292,6 +292,7 @@ z-index: 1000;
 
 .no_result_found_text {
     font-size: 28px;
+    text-align: center;
 }
 
 .stars_padding {

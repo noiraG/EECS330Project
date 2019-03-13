@@ -127,6 +127,7 @@ function clearFilters() {
     document.getElementById("Anstars").innerHTML = ""
     document.getElementById("Workerstars").innerHTML = ""
     document.getElementById("Overallstars").innerHTML = ""
+    document.getElementById("no-items-found").hidden=true;
 
 }
 
