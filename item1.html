@@ -4,6 +4,12 @@
    <!-- sp:feature:head-start -->
    <head>
       <link rel="stylesheet" href="css/item-page.css">
+      <link rel="stylesheet" type="text/css" href="css/extras.css">
+      <link rel="stylesheet" href="css/w3.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <script async="" src="https://images-na.ssl-images-amazon.com/images/G/01/AUIClients/ClientSideMetricsAUIJavascript@jserrorsForester.10f2559e93ec589d92509318a7e2acbac74c343a._V2_.js" crossorigin="anonymous"></script>
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -4154,6 +4160,94 @@
                      </div>
                   </div>
                </div>
+
+               <!--=====================================================================================================================-->
+               <button class="exten-main-button" onclick=toggleFilter()>
+                  E
+               </button>
+
+
+
+               <div class="exten-filter w3-panel w3-card" style="width: 500px; margin-top: 3px" hidden="true">
+                  <header id="exten-filter-header">
+                    <h1>Edifier Ethicacy Report</h1>
+                  </header>
+                  <div class="w3-row w3-border w3-border-white w3-card w3-round-xlarge w3-topbar w3-bottombar" style="margin-bottom:10px">
+                    <div class="w3-half w3-container exten-filter-scores">
+                         <div class="report_title">Scores</div>
+                          <div class="extern-filter-option2 w3-card-2 w3-row w3-large w3-border-white w3-border w3-round-large">
+                         <div class="w3-half">Overall Ethical Score: 3.3</div>
+                         <div id="Overallstars" class="stars_padding w3-half">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half"></i>
+                         </div>
+                      </div>
+
+                      <div class="extern-filter-option2 w3-row w3-card-2 w3-border-white w3-border w3-round-large">
+                            <div class="w3-half">Environmental Substainability: 3.5</div>
+                         <div id="Enstars" class="stars_padding w3-half">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half"></i>
+                         </div>
+                      </div>
+
+                      <div class="extern-filter-option2 w3-row w3-card-2 w3-medium w3-border-white w3-border w3-round-large">
+                            <div class="w3-half">Animal Treatment: 3.7</div>
+                         <div id="Anstars" class="stars_padding w3-half">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half"></i>
+                         </div>
+                      </div>
+
+                      <div class="extern-filter-option2 w3-row w3-medium w3-card-2 w3-border-white w3-border w3-round-large">
+                            <div class="w3-half">Worker Condition: 3.5</div>
+                         <div id="Workerstars" class="stars_padding w3-half">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half"></i>
+                         </div>
+                      </div>
+                    </div>
+                    
+                    <div class="w3-half w3-border-white w3-leftbar"> 
+                      <div class="extern-filter-option">
+                         <div class="report_title">About Company</div>
+                         <p class="w3-container" style="text-align: left;">
+                            Edifier is an audio manufacturer that offers a range of speakers, music systems, and headphones for personal &amp; home entertainment.<br>
+                            Established in May 1996 in Beijing, China.<br>
+                            Today, Edifier has distributors in over 70 countries, with operations in North America, Latin America, Europe, the Middle East, and Asia Pacific.<br>
+                            There are 3,000 employees worldwide.<br>
+                            In December 2011 Edifier announced the acquisition of STAX, founders of electrostatic earspeakers.
+                         </p>
+                         <div>
+                         </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div style="margin-bottom:6px" class="extern-filter-option w3-border w3-border-white w3-card w3-round-xlarge w3-topbar w3-bottombar">
+                     <div class="report_title">Ethical Grading</div>
+                     <div class="w3-row">
+                     <ul class="w3-ul w3-half w3-card-2 w3-row w3-medium w3-border-white w3-border w3-round-large">
+                        <li>+ Good work condition</li>
+                        <li>+ Donate to animal protect organizations</li>
+                      </ul>
+                     <ul class="w3-ul w3-half w3-card-2 w3-row w3-medium w3-border-white w3-border w3-round-large">
+                        <li>- Salary below average</li>
+                        <li>- Pollute local environment</li>
+                      </ul>
+                      </div>
+                  </div>
+
+               </div>
+               <!--=====================================================================================================================-->
+
                <div id="centerCol" class="centerColAlign">
                   <div id="title_feature_div" class="feature" data-feature-name="title" data-cel-widget="title_feature_div">
                      <div id="titleSection" class="a-section a-spacing-none">
@@ -4261,7 +4355,7 @@
                               <div id="optimusDiv" class="optimusDiv" style="display: inline-flex; margin-top: 5px; margin-right: 5px; margin-bottom: 10px;">
                                  <div data-reactroot="" data-radium="true">
                                     <div data-radium="true" style="position: relative; float: left; left: initial; top: 7px; right: 44px;"></div>
-                                    <div id="exten-item-page" data-radium="true" onClick="alert('Will display score breakdown')" style="display: inline-flex;">
+                                    <div id="exten-item-page" data-radium="true" onClick="toggleFilter()" style="display: inline-flex;">
                                       <p>E</p>
                                         <i class="fa fa-star"></i>
                                         <i class="fa fa-star"></i>
@@ -6099,4 +6193,7 @@
       <script type="text/html" id="s-suggestion"><div id="<#= suggestionId #>"class="s-suggestion"data-alias="<#= alias #>"data-keyword="<#= keyword #>"data-store="<#= store #>"data-isSc="<#= isSpellCorrected #>"data-isFb="<#= isFallback #>"data-type="<#= type #>"data-nid="<#= browseNodeId #>"<# if (refTag) { #>data-reftag="<#= refTag #>"<# } #>data-crid="<#= completionResponseId #>"><# if (!skipDisplay) { for (var i = 0; i < highlightFragments.length; i++) {if (!highlightFragments[i].isHit) { #><span class="s-heavy"><# } #><#= highlightFragments[i].text #><# if (!highlightFragments[i].isHit) { #></span><# } #><# } #><# } #><# if (typeof storeHtml === "string") { #> <#= storeHtml #><# } #></div></script><script type="text/html" id="suggestions-template"><div id="suggestions-template"><# if (typeof biaTitle !== "undefined") { #><a href="<#= biaWidgetUrl #>" style="text-decoration: none !important;"><p class="s-bia-suggestion"><strong><#= biaTitle #></strong></p></a><# } #><div id="suggestions" dir="auto"><# if (typeof suggestions !== "undefined") {for(var i=0; i < suggestions.length; i++) {var displayString = suggestions[i].display; #><#= displayString #><# }} #></div></div></script><script type="text/html" id="s-recentSearch"><div id="<#= suggestionId #>" class="s-suggestion s-recentSearch s-recentSearchDistinct" data-alias="<#= alias #>" data-keyword="<#= keyword #>" data-store="<#= store #>" data-isSc="false" data-isFb="false" data-type="<#= type #>"><span class="s-heavy"><#= bprefix #></span><#= prefix #><span class="s-heavy"><#= suffix #></span><# if (typeof storeHtml === "string") { #> <#= storeHtml #><# } #><span id="delete-<#= suggestionId #>" class="s-suggestion-deleteDistinct"><i id="delete-icon-<#= suggestionId #>" class="a-icon a-icon-remove"></i></span> </div></script><script type="text/html" id="s-separator"><div id="s-separator"><div class="s-separator"></div></div></script><script type="text/html" id="s-option"><option value="<#= value #>"><#= store #></option></script><script type="text/html" id="s-minimal"><div class="s-suggestion s-custom" data-url="<#= url #>"><#= bprefix #><span class="s-heavy"><#= prefix #></span><#= suffix #></div></script><script type="text/html" id="s-storeText"><span class="<#= cssClasses #>"><#= store #></span></script><script type="text/html" id="s-nextSearch"><div id="<#= suggestionId #>" <# if (nextSearchTemplateType === "T2") { #>class="s-suggestion s-nextSearch s-nextSearch-block s-nextSearch-cell" <# } else { #>class="s-suggestion s-nextSearch" <# } #>data-alias="<#= alias #>" data-keyword="<#= keywords #>" data-isSc="false" data-isFb="false" data-type="<#= type #>"><#= keywords #></div></script><script type="text/html" id="s-qu-suggestion"><div id="<#= suggestionId #>"class="s-suggestion s-qu-suggestion"data-keyword="<#= keyword #>"data-store="<#= store #>"data-isSc="<#= isSpellCorrected #>"data-type="<#= type #>"data-qu-type="<#= qu.type #>"data-qu-value="<#= qu.value #>"data-crid="<#= completionResponseId #>"><span class="s-qu-display-string"><#= qu.displayString  #></span></div></script>
       <div id="zoomWindow" style="overflow: hidden; position: absolute; background-color: white; z-index: 190; box-shadow: rgba(0, 0, 0, 0.25) 0px 6px 8px 2px; border: 1px solid rgb(148, 148, 148); left: 695px; top: 28px; width: 806px; height: 664px; display: none;"><img id="detailImg" src="https://images-na.ssl-images-amazon.com/images/I/71o5w0ZfptL._SL1500_.jpg" style="position: absolute; left: -694px; top: -357.091px;"></div>
    </body>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+   <script src="filtering.js"></script>
 </html>
